@@ -40,10 +40,7 @@ function playRound(playerSelection, computerSelection) {
     // Inside the event handler, call playRound with appropriate arguments
     playerSelection = "rock";
     computerSelection = getComputerChoice();
-    console.log("You have selected:", playerSelection.toLowerCase());
-    console.log("Computer's choice is:", computerSelection);
     let result = playRound(playerSelection, computerSelection);
-    console.log(result);
     displayResult(playerSelection, computerSelection, result);
 
 };
@@ -52,10 +49,7 @@ const paperBtn = document.querySelector("#paper");
     // Inside the event handler, call playRound with appropriate arguments
     playerSelection = "paper";
     computerSelection = getComputerChoice();
-    console.log("You have selected:", playerSelection.toLowerCase());
-    console.log("Computer's choice is:", computerSelection);
     let result = playRound(playerSelection, computerSelection);
-    console.log(result);
     displayResult(playerSelection, computerSelection, result);
 
 };
@@ -64,10 +58,7 @@ const scissorsBtn = document.querySelector("#scissors");
     // Inside the event handler, call playRound with appropriate arguments
     playerSelection = "scissors";
     computerSelection = getComputerChoice();
-    console.log("You have selected:", playerSelection.toLowerCase());
-    console.log("Computer's choice is:", computerSelection);
     let result = playRound(playerSelection, computerSelection);
-    console.log(result);
     displayResult(playerSelection, computerSelection, result);
 };
 let roundWinner =0;
@@ -92,36 +83,4 @@ function displayResult(playerSelection, computerSelection, result) {
 }
 }
 
-
-
-
-// function playGame() {
-//     let playerWins = 0;
-//     let computerWins = 0;
-//     for(let round=1;round<=5;round++){
-//         playerSelection = prompt("Enter your choice");
-//         computerSelection = getComputerChoice();
-//         console.log("You have selected:", playerSelection.toLowerCase());
-//         console.log("Computer's choice is:", computerSelection);
-//         let result=playRound(playerSelection, computerSelection);
-//         console.log(result);
-//         if(result.startsWith("You Win! ")){
-//             playerWins++;
-//         }
-//         else if(result.startsWith("You Lose! ")){
-//             computerWins++;
-//         }
-//     }
-//     if(playerWins>computerWins){
-//         console.log("You win the game");
-//     }
-//     else if(playerWins<computerWins){
-//         console.log("You lose the game");
-//     }
-//     else{
-//         console.log("It's a tie match");
-//     }
-// }
-
-// playGame();
 
